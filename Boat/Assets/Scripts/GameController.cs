@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     private int Score;
@@ -50,17 +51,11 @@ public class GameController : MonoBehaviour
     	
     	playButton.SetActive(false);
     	gameOver.SetActive(false);
-    	waveGenerator.SetActive(true);
     	Time.timeScale = 1f;
-    	player.enabled = true;
-    	player.transform.position = new Vector3(0f , 0f ,0f);
+    	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     	
-    	Pipes[] pipes = FindObjectsOfType<Pipes>();
     	
-    	for(int i = 0 ; i < pipes.Length ; i++)
-    	{
-    		Destroy(pipes[i].gameObject);
-    	}
+    	
     }
     
     

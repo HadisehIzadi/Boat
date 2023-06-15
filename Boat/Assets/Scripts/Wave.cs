@@ -6,6 +6,7 @@ public class Wave : MonoBehaviour
 {
     public int MaxReflectCount = 1;
     public float Speed = 1f;
+    
 
     private int _reflectCount = 0;
     
@@ -25,5 +26,14 @@ public class Wave : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    void OnTriggerEnter2D(Collider2D other)
+    {
+    	if (other.gameObject.CompareTag("Player")) {
+    		Destroy(gameObject);
+    		
+    	}
+    }
+    
     
 }

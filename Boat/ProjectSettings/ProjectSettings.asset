@@ -3,7 +3,7 @@
 --- !u!129 &1
 PlayerSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 24
+  serializedVersion: 25
   productGUID: 1a2f3dd0fcf4b0c489fc846588607e28
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
@@ -131,12 +131,7 @@ PlayerSettings:
   vulkanEnablePreTransform: 0
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
-  m_SupportedAspectRatios:
-    4:3: 1
-    5:4: 1
-    16:10: 1
-    16:9: 1
-    Others: 1
+  loadStoreDebugModeEnabled: 0
   bundleVersion: 1.0
   preloadedAssets: []
   metroInputSource: 0
@@ -148,6 +143,7 @@ PlayerSettings:
     enable360StereoCapture: 0
   isWsaHolographicRemotingEnabled: 0
   enableFrameTimingStats: 0
+  enableOpenGLProfilerGPURecorders: 1
   useHDRDisplay: 0
   D3DHDRBitDepth: 0
   m_ColorGamuts: 00000000
@@ -166,7 +162,7 @@ PlayerSettings:
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 22
-  AndroidTargetSdkVersion: 30
+  AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
@@ -255,6 +251,7 @@ PlayerSettings:
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
+  AndroidEnableArmv9SecurityFeatures: 0
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
@@ -268,7 +265,6 @@ PlayerSettings:
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
   chromeosInputEmulation: 1
-  AndroidMinifyWithR8: 0
   AndroidMinifyRelease: 0
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
@@ -483,6 +479,43 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 0
       m_SubKind: 
+  - m_BuildTarget: tvOS
+    m_Icons:
+    - m_Textures: []
+      m_Width: 1280
+      m_Height: 768
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 800
+      m_Height: 480
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 400
+      m_Height: 240
+      m_Kind: 0
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 4640
+      m_Height: 1440
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 2320
+      m_Height: 720
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 3840
+      m_Height: 1440
+      m_Kind: 1
+      m_SubKind: 
+    - m_Textures: []
+      m_Width: 1920
+      m_Height: 720
+      m_Kind: 1
+      m_SubKind: 
   m_BuildTargetBatching: []
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs:
@@ -533,11 +566,12 @@ PlayerSettings:
     tvOS: 1
   m_BuildTargetGroupLightmapEncodingQuality:
   - m_BuildTarget: Android
-    m_EncodingQuality: 0
+    m_EncodingQuality: 1
   m_BuildTargetGroupHDRCubemapEncodingQuality:
   - m_BuildTarget: Android
-    m_EncodingQuality: 0
+    m_EncodingQuality: 1
   m_BuildTargetGroupLightmapSettings: []
+  m_BuildTargetGroupLoadStoreDebugModeSettings: []
   m_BuildTargetNormalMapEncoding: []
   m_BuildTargetDefaultTextureCompressionFormat:
   - m_BuildTarget: Android
@@ -780,6 +814,7 @@ PlayerSettings:
   webGLMemorySize: 32
   webGLExceptionSupport: 1
   webGLNameFilesAsHashes: 0
+  webGLShowDiagnostics: 0
   webGLDataCaching: 1
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
@@ -810,12 +845,10 @@ PlayerSettings:
   suppressCommonWarnings: 1
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
-  enableRoslynAnalyzers: 1
   selectedPlatform: 2
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 1
-  assemblyVersionValidation: 1
   gcWBarrierValidation: 0
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
@@ -887,8 +920,13 @@ PlayerSettings:
   luminVersion:
     m_VersionCode: 1
     m_VersionName: 
+  hmiPlayerDataPath: 
+  hmiForceSRGBBlit: 1
+  embeddedLinuxEnableGamepadInput: 1
+  hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
+  windowsGamepadBackendHint: 0
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
@@ -896,7 +934,6 @@ PlayerSettings:
   organizationId: 
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
-  playerDataPath: 
-  forceSRGBBlit: 1
+  hmiLoadingImage: {fileID: 0}
   virtualTexturingSupportEnabled: 0
   insecureHttpOption: 0

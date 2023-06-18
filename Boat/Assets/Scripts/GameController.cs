@@ -6,8 +6,8 @@ using TMPro;
 using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
-    private int Score;
-	public TextMeshProUGUI Scoring;
+ //   private int Score;
+//	public TextMeshProUGUI Scoring;
 	public GameObject gameOver;
 	public GameObject playButton;
 	public GameObject waveGenerator;
@@ -31,13 +31,14 @@ public class GameController : MonoBehaviour
     	player.enabled = false;
     }
     
-    
+    /*
     public void IncreaseScore()
     {
     	Score++;
     	Scoring.text = Score.ToString();
     	
     }
+    */
     public void checkButton()
     {
     	gameOver.SetActive(true);
@@ -46,7 +47,7 @@ public class GameController : MonoBehaviour
     
    public void Play()
     {
-    	Score = 0 ;
+    	//Score = 0 ;
     	//Scoring.text = Score.ToString();
     	waveGenerator.SetActive(true);
     	playButton.SetActive(false);
@@ -64,7 +65,7 @@ public class GameController : MonoBehaviour
     	waveGenerator.SetActive(false);
     	gameOver.SetActive(true);
     	playButton.SetActive(true);
-    	Scoring.text = Score.ToString();
+    	//Scoring.text = Score.ToString();
     	//Time.timeScale = 0f;
     }
 
@@ -83,5 +84,10 @@ public class GameController : MonoBehaviour
     public void Home()
     {
     	SceneManager.LoadScene(0);
+    }
+    
+    public void Exit()
+    {
+    	Application.Quit();
     }
 }

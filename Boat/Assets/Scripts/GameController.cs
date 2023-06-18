@@ -48,10 +48,10 @@ public class GameController : MonoBehaviour
     {
     	Score = 0 ;
     	//Scoring.text = Score.ToString();
-    	
+    	waveGenerator.SetActive(true);
     	playButton.SetActive(false);
     	gameOver.SetActive(false);
-    	Time.timeScale = 1f;
+    	//Time.timeScale = 1f;
     	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     	
     	
@@ -65,7 +65,7 @@ public class GameController : MonoBehaviour
     	gameOver.SetActive(true);
     	playButton.SetActive(true);
     	Scoring.text = Score.ToString();
-    	Time.timeScale = 0f;
+    	//Time.timeScale = 0f;
     }
 
     // Update is called once per frame

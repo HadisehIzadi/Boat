@@ -5,16 +5,19 @@ using UnityEngine.SceneManagement;
 public class Boat : MonoBehaviour
 {
 	public float magnitude = 200f ;
+	public int maxHelth;
+	public GameObject[] boatHelth;
     // Start is called before the first frame update
     void Start()
     {
-        
+    	maxHelth = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    	if(maxHelth <= 0 )
+    		 FindObjectOfType<GameController>().GameOver();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -42,7 +45,9 @@ public class Boat : MonoBehaviour
         {
             
     		Debug.Log("hit");
-            FindObjectOfType<GameController>().GameOver();
+    		maxHelth--;
+    		Debug.Log(maxHelth);
+    		boatHelth[maxHelth].SetActive(false);
         }
         
         if (collision.gameObject.tag == "Island")

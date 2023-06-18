@@ -141,6 +141,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magnitude: 300
+  maxHelth: 0
+  boatHelth:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!60 &6358776197484468758
 PolygonCollider2D:
   m_ObjectHideFlags: 0

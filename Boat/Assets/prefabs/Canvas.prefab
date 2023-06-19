@@ -169,7 +169,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -5.263855}
+  m_AnchoredPosition: {x: 0, y: -5.263916}
   m_SizeDelta: {x: 85.187, y: 119.25}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &5234697497383926560
@@ -375,7 +375,7 @@ RectTransform:
   m_Children:
   - {fileID: 6860362598182700439}
   - {fileID: 1439153375434737732}
-  - {fileID: 8613312769450155443}
+  - {fileID: 5768860248854467388}
   - {fileID: 5682871341300580722}
   - {fileID: 7638970344668955496}
   - {fileID: 6713221665189653090}
@@ -814,7 +814,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &3643395074365843424
+--- !u!1 &3437865928761132617
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -822,10 +822,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8613312769450155443}
-  - component: {fileID: 6282316604722867272}
-  - component: {fileID: 370389180627379181}
-  - component: {fileID: 9141883023507797139}
+  - component: {fileID: 5768860248854467388}
+  - component: {fileID: 7126168636059661573}
+  - component: {fileID: 8765365321435838250}
+  - component: {fileID: 766026424684657539}
   m_Layer: 5
   m_Name: play button
   m_TagString: Untagged
@@ -833,14 +833,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!224 &8613312769450155443
+--- !u!224 &5768860248854467388
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3643395074365843424}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 3437865928761132617}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -850,24 +850,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19.2}
-  m_SizeDelta: {x: 85, y: 119}
+  m_AnchoredPosition: {x: -0.000061035156, y: 123.400024}
+  m_SizeDelta: {x: 164.6868, y: 98.9782}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &6282316604722867272
+--- !u!222 &7126168636059661573
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3643395074365843424}
+  m_GameObject: {fileID: 3437865928761132617}
   m_CullTransparentMesh: 1
---- !u!114 &370389180627379181
+--- !u!114 &8765365321435838250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3643395074365843424}
+  m_GameObject: {fileID: 3437865928761132617}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -891,13 +891,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &9141883023507797139
+--- !u!114 &766026424684657539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3643395074365843424}
+  m_GameObject: {fileID: 3437865928761132617}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -931,17 +931,17 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 370389180627379181}
+  m_TargetGraphic: {fileID: 8765365321435838250}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
-        m_MethodName: Play
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
 //	public TextMeshProUGUI Scoring;
  	public GameObject gameOverPanel;
 	public GameObject gameOver;
+  //  public GameObject shoppanel;
 	public GameObject playButton;
 	public GameObject waveGenerator;
 	public Boat player;
@@ -104,4 +105,8 @@ public class GameController : MonoBehaviour
     {
     	winpanel.SetActive(true);
     }
+   /* public void shop()
+    {
+        shoppanel.SetActive(true);
+    }*/
 }

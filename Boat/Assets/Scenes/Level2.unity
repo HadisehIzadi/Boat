@@ -435,6 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79b9612fb6bc59d459f57bacd8d0e049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 1201489262}
   gameOver: {fileID: 1201489263}
   playButton: {fileID: 150197940}
   waveGenerator: {fileID: 218040633}
@@ -3091,6 +3092,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ee65c75f3f85504da0f33ec22ca30ef, type: 3}
+--- !u!1 &1201489262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2865393333582753117, guid: 7ee65c75f3f85504da0f33ec22ca30ef, type: 3}
+  m_PrefabInstance: {fileID: 1201489261}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1201489263 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1439153375434737735, guid: 7ee65c75f3f85504da0f33ec22ca30ef, type: 3}

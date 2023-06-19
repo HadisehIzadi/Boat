@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 {
  //   private int Score;
 //	public TextMeshProUGUI Scoring;
+ 	public GameObject gameOverPanel;
 	public GameObject gameOver;
 	public GameObject playButton;
 	public GameObject waveGenerator;
@@ -50,6 +51,8 @@ public class GameController : MonoBehaviour
     	//Score = 0 ;
     	//Scoring.text = Score.ToString();
     	waveGenerator.SetActive(true);
+    	player.enabled = true;
+    	gameOverPanel.SetActive(false);
     	playButton.SetActive(false);
     	gameOver.SetActive(false);
     	//Time.timeScale = 1f;
@@ -63,6 +66,8 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
     	waveGenerator.SetActive(false);
+    	player.enabled = false;
+    	gameOverPanel.SetActive(true);
     	gameOver.SetActive(true);
     	playButton.SetActive(true);
     	//Scoring.text = Score.ToString();

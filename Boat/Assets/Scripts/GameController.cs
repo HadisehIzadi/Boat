@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
 	public GameObject playButton;
 	public GameObject waveGenerator;
 	public Boat player;
+	public GameObject winpanel;
     // Start is called before the first frame update
     public void Start()
     {
@@ -94,5 +95,13 @@ public class GameController : MonoBehaviour
     public void Exit()
     {
     	Application.Quit();
+    }
+    public void nextlevel()
+    {
+    	SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void Win()
+    {
+    	winpanel.SetActive(true);
     }
 }

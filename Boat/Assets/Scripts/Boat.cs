@@ -54,7 +54,8 @@ public class Boat : MonoBehaviour
         {
             
     		Debug.Log("win");
-    		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    		FindObjectOfType<GameController>().Win();
+    		
         }
     }
 }
